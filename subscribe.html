@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <title>subscribe</title>
+    <body>
+<p>Youtube subscribe button</p>
+<button   onclick="subscribe();" class="pop">subscribe</button>
+<script>
+    function subscribe(){
+        const buttonElement=document.querySelector('.pop');
+        if(buttonElement.innerText==="subscribe"){
+            buttonElement.innerHTML='subscribed';
+        }
+        else{
+            buttonElement.innerHTML='subscribe';
+        }
+    }
+</script>
+    </body>
+</html>

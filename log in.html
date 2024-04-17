@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <title>log in form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("images/snow.jpeg");
+            background-size:100% ;
+            background-position: center;
+            color: rgb(15, 15, 15);
+            background-repeat: no-repeat;
+        }
+        form{
+            border: 3px solid #0e0d0d;
+           background-color: gray;
+           opacity: 70%;
+           justify-content: center;
+           border-radius: 7px;
+           width: 50%;
+           height: 50%;
+           align-items: center;
+           margin: 0 auto;
+           gap: 10px;
+        }
+        input[type=text],input[type=password]{
+            width: 100%;
+            padding:12px 20px;
+            margin:8px 0px;
+            display:inline-block;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            font-size: 23px;
+            font-family: roboto;
+            border-radius: 8px;
+            font-weight: bolder;
+        
+        }
+        .forget{
+            width: 100%;
+            margin: 0;
+            text-align: right;
+            
+        }
+        .login{
+            margin: 8px 0px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            width: 100%;
+            padding:12px 5px;
+            font-size: 23px;
+            font-family:roboto ;
+            border-radius: 8px;
+            background-color: rgb(26, 25, 25);
+            color:azure;
+            font-weight: bolder;
+            
+            
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        checkbox:hover{
+            cursor: pointer;
+        }
+        .title{
+            padding:0 0px;
+            text-align: center;
+            font-size: 36px;
+            font-family: roboto;
+            font-weight: bolder;
+        }
+
+    </style>
+
+    <body>
+        <form action="html" method="post">
+            <div class="title"><span> Login form</span> </div>
+            <div>
+                <label for="usename" class="user" required>username </label>
+                <input type="text" placeholder="enter username" required>
+               <i class="fa fa-user"></i>
+            </div> 
+            <div>
+                <label for="password" class="password">password</label>
+                <input type="password" placeholder="enter password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div>
+            <input type="checkbox" id="check" >
+            <label for="check" class="remember">remember me</label> 
+            <p class="forget"><a href="#"> forget password?</a></p>
+            </div>
+            <div>
+                <button class="login">log in</button>
+            </div>
+            
+        </form>
+    </body>
+    
+</html>
